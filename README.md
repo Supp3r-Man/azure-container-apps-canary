@@ -1,6 +1,6 @@
 # azure-container-apps-canary
 
-![ci](https://github.com/Sup3rMar10/azure-container-apps-canary/actions/workflows/ci.yml/badge.svg)
+![ci](https://github.com/Supp3r-Man/azure-container-apps-canary/actions/workflows/ci.yml/badge.svg)
 
 **A gradual rollout controller for Azure Container Apps that decides from evidence and always has a way back.** It creates a new revision with no traffic, waits for it to be healthy, tests it on its own label URL, shifts 10% / 50% / 100% of traffic, judges each step by the new revision's 5xx ratio, and sends everything back by itself if it looks bad. Most of the code is about what Container Apps does *differently* from a plain deploy: revision modes, `latestRevision` traffic rules, revision health, and inactive revisions.
 
